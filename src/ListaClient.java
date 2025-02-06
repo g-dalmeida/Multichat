@@ -23,7 +23,7 @@ public class ListaClient {
         for (Socket socket : listaSockets) {
             if (socket != client) {
                 PrintWriter out = new PrintWriter(socket.getOutputStream());
-                out.println();
+                out.println(message);
                 out.flush();
             }
         }
